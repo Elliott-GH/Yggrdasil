@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "description": "Non-sensitive ChemEng, control theory, numerical methods, and technical reference links for Yggdrasil.",
+  "references": [
+    {
+      "ref_id": "ref-rivera-1986-imc",
+      "title": "Internal model control: PID controller design",
+      "authors": ["Daniel E. Rivera", "Manfred Morari", "Sigurd Skogestad"],
+      "year": 1986,
+      "doi": "10.1021/i200032a041",
+      "url": "https://pubs.acs.org/doi/10.1021/i200032a041",
+      "tags": ["IMC", "PID", "FOPDT", "control_system", "process_control"],
+      "abstract_or_notes": "Foundational derivation of IMC-PID tuning laws for first-order plus dead-time (FOPDT) chemical process models using first-order Pade dead-time approximation."
+    },
+    {
+      "ref_id": "ref-skogestad-2003-simc",
+      "title": "Simple analytic rules for model reduction and PID controller tuning",
+      "authors": ["Sigurd Skogestad"],
+      "year": 2003,
+      "doi": "10.1016/S0959-1524(02)00062-8",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959152402000628",
+      "tags": ["SIMC", "PID", "FOPDT", "control_system", "tuning"],
+      "abstract_or_notes": "SIMC tuning rule setting Kc = tau / (Kp * (tau_c + theta)) and tau_I = min(tau, 4 * (tau_c + theta)) for balanced disturbance rejection and robustness."
+    },
+    {
+      "ref_id": "ref-ziegler-nichols-1942",
+      "title": "Optimum Settings for Automatic Controllers",
+      "authors": ["J. G. Ziegler", "N. B. Nichols"],
+      "year": 1942,
+      "doi": "10.1115/1.4019264",
+      "url": "https://asmedigitalcollection.asme.org/fluidsengineering/article/64/8/759/1164191",
+      "tags": ["Ziegler-Nichols", "PID", "open_loop", "process_control"],
+      "abstract_or_notes": "Classical quarter-decay-ratio open-loop reaction curve PID tuning formulas based on FOPDT process gain, time constant, and dead time."
+    },
+    {
+      "ref_id": "ref-perry-chemeng-kinetics",
+      "title": "Perry's Chemical Engineers' Handbook: Reaction Kinetics, Arrhenius Law & Fluid Flow (Reynolds Number)",
+      "authors": ["Don W. Green", "Marylee Z. Southard"],
+      "year": 2019,
+      "doi": null,
+      "url": "https://www.accessengineeringlibrary.com/content/book/9780071834087",
+      "tags": ["ChemEng", "Arrhenius", "Reynolds", "ideal_gas", "antoine", "thermodynamics"],
+      "abstract_or_notes": "Standard reference values for ideal gas constant R = 8.314462618 J/(mol*K), laminar-to-turbulent pipe flow transition Re in [2100, 4000], and Antoine vapor-pressure correlations."
+    },
+    {
+      "ref_id": "ref-robertson-bm25",
+      "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+      "authors": ["Stephen Robertson", "Hugo Zaragoza"],
+      "year": 2009,
+      "doi": "10.1561/1500000019",
+      "url": "https://www.nowpublishers.com/article/Details/INR-019",
+      "tags": ["BM25", "information_retrieval", "smart_pdf", "ranking"],
+      "abstract_or_notes": "Okapi BM25 ranking formulation with term-frequency saturation parameter k1 = 1.5 and document length normalization b = 0.75."
+    }
+  ]
+}

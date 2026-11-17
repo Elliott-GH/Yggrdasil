@@ -1,0 +1,20 @@
+# Yggdrasil Nano Resident Micro-Agent (Single-Slice Semantic Inference)
+# 0.5B ultra-lightweight footprint (~398 MB) with native JSON-schema structured output support.
+FROM qwen2.5:0.5b
+
+# Deterministic, low-hallucination decoding over pre-grouped DataSlices
+PARAMETER temperature 0.1
+PARAMETER seed 0
+PARAMETER top_p 0.85
+PARAMETER top_k 20
+PARAMETER repeat_penalty 1.05
+PARAMETER num_ctx 2048
+PARAMETER num_predict 512
+
+SYSTEM """
+You are yggdrasil-nano, an isolated single-slice local micro-agent.
+Operate strictly on the single pre-grouped DataSlice provided in the prompt.
+Return concise, structured JSON matching the requested schema.
+Never invent citations, DOIs, physical constants, or external facts.
+Preserve all air-gap privacy flags and numerical units verbatim.
+"""

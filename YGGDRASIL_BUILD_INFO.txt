@@ -1,0 +1,4 @@
+Product: Yggdrasil Sovereign Studio
+Version: 0.5.0
+UI Runtime: Native PySide6 / Qt6 Gemini Interactive Workspace (Canvas, Deep Research, Gems, AGY SDK)
+Spec: SPEC-005

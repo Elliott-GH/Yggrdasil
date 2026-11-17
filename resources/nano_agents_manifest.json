@@ -1,0 +1,92 @@
+[
+  {
+    "agent_id": "micro_router_1024",
+    "tag": "ALL",
+    "callable_name": "ThousandParamMicroModel",
+    "execution_mode": "pure_python_cpu",
+    "parameter_count": 1024,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "table_data_solver",
+    "tag": "#TABLE_DATA",
+    "callable_name": "data_handling_function",
+    "execution_mode": "pure_python_deterministic",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "calculation_solver",
+    "tag": "#CALC_SOLVE",
+    "callable_name": "calculation_solver_function",
+    "execution_mode": "pure_python_deterministic",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "data_comparison_solver",
+    "tag": "#DATA_COMPARE",
+    "callable_name": "data_comparison_function",
+    "execution_mode": "pure_python_deterministic",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "pdf_converter_solver",
+    "tag": "#PDF_CONVERT",
+    "callable_name": "pdf_converter_function",
+    "execution_mode": "pure_python_deterministic",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "smart_pdf_linker",
+    "tag": "#SMART_PDF_LINK",
+    "callable_name": "smart_pdf_handling_function",
+    "execution_mode": "pure_python_deterministic",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "coding_optimiser",
+    "tag": "#CODE_OPTIMISE",
+    "callable_name": "coding_optimiser_function",
+    "execution_mode": "pure_python_ast",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "control_system_optimiser",
+    "tag": "#CONTROL_SYSTEM",
+    "callable_name": "control_system_optimiser_function",
+    "execution_mode": "pure_python_control",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "research_gap_verifier",
+    "tag": "#RESEARCH_GAP",
+    "callable_name": "research_tool_function",
+    "execution_mode": "pure_python_airgap_guarded",
+    "parameter_count": 0,
+    "vram_mb_estimate": 0,
+    "llm_tokens_required": false
+  },
+  {
+    "agent_id": "yggdrasil_nano_llm",
+    "tag": "#SEMANTIC_MICRO",
+    "callable_name": "NestedCallableLightAgent",
+    "execution_mode": "ollama_shared_local_engine",
+    "parameter_count": 135000000,
+    "vram_mb_estimate": 270,
+    "llm_tokens_required": true
+  }
+]
